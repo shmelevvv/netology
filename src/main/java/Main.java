@@ -6,8 +6,8 @@ public class Main {
 
         int a = calc.plus.apply(1, 2);
         int b = calc.minus.apply(1,1);
-        int c = calc.devide.apply(2, 1);
-        int d = calc.abs.apply(0);
+        int c = calc.devide.apply(2, 0);
+        int d = calc.abs.apply(11);
 
         calc.println.accept(d);
     }
