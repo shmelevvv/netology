@@ -1,5 +1,3 @@
-package main.java;
-
 import java.util.function.*;
 
 public class Calculator {
@@ -10,12 +8,9 @@ public class Calculator {
     BinaryOperator<Integer> multiply = (x, y) -> x * y;
     BinaryOperator<Integer> devide = (x, y) -> {
         try {
-            if (y == 0) {
-                throw new ArithmeticException("Exception: divide by zero.");
-            }
             return x / y;
         } catch (ArithmeticException e) {
-            System.out.println(e.getMessage());
+            System.out.println("Exception: divide by zero.");
             return 0;
         }
     };
